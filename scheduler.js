@@ -1,6 +1,7 @@
 const cron = require("node-cron");
 const TelegramBot = require("node-telegram-bot-api");
 const fetchArticles = require("./fetcher");
+
 const paraphraseContent = require("./paraphraser");
 
 const bot = new TelegramBot(process.env.TELEGRAM_BOT_TOKEN, { polling: false });

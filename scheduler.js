@@ -40,9 +40,9 @@ async function scheduledTask() {
 
 // Schedule at 2 PM and 7 PM daily
 function startScheduler() {
-  cron.schedule("0 14,19 * * *", () => {
+  cron.schedule("0 10,19 * * *", () => {
     scheduledTask();
-    console.log("🔄 Scheduled task executed at 2 PM and 7 PM");
+    console.log("🔄 Scheduled task executed at 10 AM and 7 PM");
   });
   console.log("🤖 Scheduler started");
 }

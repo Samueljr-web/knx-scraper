@@ -13,6 +13,7 @@ async function fetchArticles() {
     title: article.title,
     content: article.description || article.content,
     url: article.url,
+    image: article.image,
   }));
 }
 
